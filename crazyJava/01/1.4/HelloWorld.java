@@ -10,8 +10,7 @@
  * @author Yeeku.H.Lee kongyeeku@163.com
  * @version 1.0
  */
-public class HelloWorld
-{
+public class HelloWorld{
 	// Java程序的入口方法，程序将从这里开始执行
 	public static void main(String[] args)
 	{
