@@ -46,7 +46,7 @@ public class DefaultProxySelectorTest
 		System.out.println("系统为ftp://www.crazyit.org选择的代理服务器为："
 			+ ProxySelector.getDefault().select(new URI("ftp://www.crazyit.org"))); // ②
 		URL url = new URL(urlStr);
-		// 直接打开连接，默认的代理选择器会使用http.proxyHost、
+		// 直接打开连接，默认的代理选择器会使用 http.proxyHost、
 		// http.proxyPort系统属性设置的代理服务器，
 		// 如果无法连接代理服务器，默认的代理选择器会尝试直接连接
 		URLConnection conn = url.openConnection();   // ③
