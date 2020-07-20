@@ -21,7 +21,7 @@ public class FileVisitorTest
 		Files.walkFileTree(Paths.get("g:", "publish" , "codes" , "15")
 			, new SimpleFileVisitor<Path>()
 		{
-			// 访问文件时候触发该方法
+			//  访问文件时候触发该方法
 			@Override
 			public FileVisitResult visitFile(Path file
 				, BasicFileAttributes attrs) throws IOException
