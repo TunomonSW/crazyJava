@@ -15,7 +15,6 @@ public class AssignOperatorTest
 	public static void main(String[] args)
 	{
 		String str = "Java"; // 为变量str赋值为Java
-//		double pi = 3.14; // 为变量pi赋值为3.14
 		boolean visited = true; // 为变量visited赋值为true
 		String str2 = str; // 将变量str的值赋给str2
 		int a;
