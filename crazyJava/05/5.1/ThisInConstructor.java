@@ -24,7 +24,7 @@ public class ThisInConstructor
 	}
 	public static void main(String[] args)
 	{
-		// 所有使用ThisInConstructor创建的对象的foo成员变量
+		// 所有使用ThisInConstructor创建的对象的foo成员变量。
 		// 都将被设为6，所以下面代码将输出6。
 		System.out.println(new ThisInConstructor().foo);
 	}
