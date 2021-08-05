@@ -110,6 +110,7 @@ public class AdjustingWidth
 			});
 		}
 		menuBar.add(selectUnitMenu);
+		
 		// -----为窗口安装设置表格选择单元的菜单-----
 		rowsItem.setSelected(table.getRowSelectionAllowed());
 		columnsItem.setSelected(table.getColumnSelectionAllowed());
@@ -140,6 +141,7 @@ public class AdjustingWidth
 		});
 		selectUnitMenu.add(cellsItem);
 		jf.setJMenuBar(menuBar);
+		
 		// 分别获取表格的三个表格列，并设置三列的最小宽度，最佳宽度和最大宽度
 		TableColumn nameColumn = table.getColumn(columnTitle[0]);
 		nameColumn.setMinWidth(40);
@@ -147,6 +149,7 @@ public class AdjustingWidth
 		ageColumn.setPreferredWidth(50);
 		TableColumn genderColumn = table.getColumn(columnTitle[2]);
 		genderColumn.setMaxWidth(50);
+		
 		// 将JTable对象放在JScrollPane中，并将该JScrollPane放在窗口中显示出来
 		jf.add(new JScrollPane(table));
 		jf.pack();
