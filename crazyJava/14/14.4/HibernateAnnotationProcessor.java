@@ -17,12 +17,16 @@ import java.util.*;
  * @version 1.0
  */
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-// 指定可处理@Persistent、@Id、@Property三个注解
+/*
+  指定可处理@Persistent、@Id、@Property三个注解
+ */
 @SupportedAnnotationTypes({"Persistent" , "Id" , "Property"})
 public class HibernateAnnotationProcessor
 	extends AbstractProcessor
 {
-	// 循环处理每个需要处理的程序对象
+	/**
+	 * 循环处理每个需要处理的程序对象
+	 */
 	public boolean process(Set<? extends TypeElement> annotations
 		, RoundEnvironment roundEnv)
 	{
@@ -45,7 +49,7 @@ public class HibernateAnnotationProcessor
 				ps.println("<!DOCTYPE hibernate-mapping PUBLIC");
 				ps.println("	\"-//Hibernate/Hibernate "
 					+ "Mapping DTD 3.0//EN\"");
-				ps.println("	\"http://www.hibernate.org/dtd/"
+				ps.println("	\"https://www.hibernate.org/dtd/"
 					+ "hibernate-mapping-3.0.dtd\">");
 				ps.println("<hibernate-mapping>");
 				ps.print("	<class name=\"" + t);
@@ -54,10 +58,12 @@ public class HibernateAnnotationProcessor
 				for (Element f : t.getEnclosedElements())
 				{
 					// 只处理成员变量上的注解
-					if (f.getKind() == ElementKind.FIELD)   // ①
+					// ①
+					if (f.getKind() == ElementKind.FIELD)
 					{
 						// 获取成员变量定义前的@Id注解
-						Id id = f.getAnnotation(Id.class);      // ②
+						// ②
+						Id id = f.getAnnotation(Id.class);
 						// 当@Id注解存在时输出<id.../>元素
 						if(id != null)
 						{
@@ -71,7 +77,8 @@ public class HibernateAnnotationProcessor
 							ps.println("		</id>");
 						}
 						// 获取成员变量定义前的@Property注解
-						Property p = f.getAnnotation(Property.class);  // ③
+						// ③
+						Property p = f.getAnnotation(Property.class);
 						// 当@Property注解存在时输出<property.../>元素
 						if (p != null)
 						{
