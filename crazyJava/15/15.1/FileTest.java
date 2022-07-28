@@ -34,8 +34,10 @@ public class FileTest
 		System.out.println("newFile对象是否存在：" + newFile.exists());
 		// 以指定newFile对象来创建一个文件
 		newFile.createNewFile();
-		// 以newFile对象来创建一个目录，因为newFile已经存在，
-		// 所以下面方法返回false，即无法创建该目录
+		/*
+		 以newFile对象来创建一个目录，因为newFile已经存在，
+		 所以下面方法返回false，即无法创建该目录
+		*/
 		newFile.mkdir();
 		// 使用list()方法来列出当前路径下的所有文件和路径
 		String[] fileList = file.list();
