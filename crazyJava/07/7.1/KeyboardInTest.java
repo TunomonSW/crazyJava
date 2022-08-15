@@ -16,8 +16,7 @@ public class KeyboardInTest
 		throws Exception
 	{
 		// 以System.in节点流为基础，创建一个BufferedReader对象
-		BufferedReader br = new BufferedReader(
-			new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String line = null;
 		// 逐行读取键盘输入
 		while ((line = br.readLine()) != null)
