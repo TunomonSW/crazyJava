@@ -26,7 +26,7 @@ public class CrazyitArray
 		// 使用CrazyitArray的newInstance()创建二维数组
 		// 在这种情况下，只要设置数组元素的类型是int[]即可。
 		int[][] intArr = CrazyitArray.newInstance(int[].class , 5);
-		arr[5] = "疯狂Java讲义";
+		arr[5] = "疯狂Java讲义5";
 		// intArr是二维数组，初始化该数组的第二个数组元素
 		// 二维数组的元素必须是一维数组
 		intArr[1] = new int[]{23, 12};
