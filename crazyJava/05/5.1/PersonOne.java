@@ -11,7 +11,7 @@
  * @author Yeeku.H.Lee kongyeeku@163.com
  * @version 1.0
  */
-public class Person {
+public class PersonOne {
     // 下面定义了两个成员变量
     public String name;
     public int age;

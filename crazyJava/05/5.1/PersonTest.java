@@ -15,10 +15,10 @@ public class PersonTest
 	public static void main(String[] args)
 	{
 		// 使用Peron类定义一个Person类型的变量
-		Person p;
+		PersonOne p;
 		// 通过new关键字调用Person类的构造器，返回一个Person实例，
 		// 将该Person实例赋给p变量。
-		p = new Person();
+		p = new PersonOne();
 
 		// 访问p的name实例变量，直接为该变量赋值。
 		p.name = "李刚";
@@ -30,6 +30,6 @@ public class PersonTest
 		System.out.println(p.name);
 
 		// 将p变量的值赋值给p2变量
-		Person p2 = p;
+		PersonOne p2 = p;
 	}
 }
