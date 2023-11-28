@@ -22,8 +22,8 @@ public class Dog
 	public void run()
 	{
 
-		//Dog d = new Dog();
-		//d.jump();
+		Dog d = new Dog();
+		d.jump();
 
 		// 使用this引用调用run()方法的对象
 		this.jump();
