@@ -19,6 +19,7 @@ public class ReturnThis
 		// return this返回调用该方法的对象
 		return this;
 	}
+
 	public static void main(String[] args)
 	{
 		ReturnThis rt = new ReturnThis();
