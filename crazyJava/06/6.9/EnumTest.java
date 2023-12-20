@@ -12,23 +12,15 @@
  */
 public class EnumTest
 {
+
 	public void judge(SeasonEnum s)
 	{
 		// switch语句里的表达式可以是枚举值
-		switch (s)
-		{
-			case SPRING:
-				System.out.println("春暖花开，正好踏青");
-				break;
-			case SUMMER:
-				System.out.println("夏日炎炎，适合游泳");
-				break;
-			case FALL:
-				System.out.println("秋高气爽，进补及时");
-				break;
-			case WINTER:
-				System.out.println("冬日雪飘，围炉赏雪");
-				break;
+		switch (s) {
+			case SPRING -> System.out.println("春暖花开，正好踏青");
+			case SUMMER -> System.out.println("夏日炎炎，适合游泳");
+			case FALL -> System.out.println("秋高气爽，进补及时");
+			case WINTER -> System.out.println("冬日雪飘，围炉赏雪");
 		}
 	}
 	public static void main(String[] args)
